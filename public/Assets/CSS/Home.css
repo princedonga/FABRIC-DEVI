@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #6f222a;
+    --secondary-color: #2ecc71;
+}
+
+.offer-set {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 7px 0;
+}
+
+.offer-set span {
+    margin: 0 30px;
+}
+
+.carousel-button {
+    background-color: var(--primary-color) !important;
+    width: 72px !important;
+    height: 3px !important;
+    padding: 0;
+    margin-right: 12px !important;
+    margin-left: 3px;
+}
+.offers-img{
+    transition: 1s;
+    cursor: pointer;
+}
+.offers-img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
