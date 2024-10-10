@@ -63,7 +63,7 @@ const Header = () => {
                                 <ul className="navbar-nav mx-auto">
                                     <li className="nav-item"><Link to="" className="nav-link">NEW ARRIVALS</Link></li>
                                     <li className="nav-item">
-                                        <Link to="" className="nav-link" data-toggle="dropdown">BEST SELLER</Link>
+                                        <Link to="" className="nav-link" >BEST SELLER</Link>
                                     </li>
                                     {/* PRINTED FABRIC with Dropdown */}
                                     <li className="nav-item dropdown">
