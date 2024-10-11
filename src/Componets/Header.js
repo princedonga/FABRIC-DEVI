@@ -33,7 +33,7 @@ const Header = () => {
                     <div className="row align-items-center py-3">
                         {/* Left: Search Icon */}
                         <div className="col-2 d-flex align-items-center">
-                            <i className="fa-solid fa-bars icon  d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></i>
+                            <i className="fa-solid fa-bars icon d-lg-none  d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></i>
                             {/* offcanvas menu */}
 
                             <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
