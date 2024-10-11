@@ -33,7 +33,27 @@ const Header = () => {
                     <div className="row align-items-center py-3">
                         {/* Left: Search Icon */}
                         <div className="col-2 d-flex align-items-center">
-                            <i className="fa-solid fa-bars icon d-lg-none d-block"></i>
+                            <i className="fa-solid fa-bars icon  d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></i>
+                            {/* offcanvas menu */}
+
+                            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title logo fs-2" id="offcanvasScrollingLabel">FABRIC DEVI</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul className='offcanvas-menu mt-4'>
+                                        <li><Link>NEW ARRIVALS</Link></li>
+                                        <li><Link>BEST SELLER</Link></li>
+                                        <li><Link> PRINTED FABRIC <i class="fa-solid fa-chevron-down float-end"></i></Link></li>
+                                        <li><Link>FABRIC SET</Link></li>
+                                        <li><Link>SALE</Link></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            {/* offcanvas menu */}
+
                             <i className="fa-solid fa-magnifying-glass icon"></i>
                         </div>
 
@@ -51,7 +71,7 @@ const Header = () => {
                             </div>
                             <div className="cart">
                                 <i className="fa-solid fa-cart-shopping icon"></i>
-                                <span className="cart-count">0</span>
+                                <span className="ms-1 cart-count">(0)</span>
                             </div>
                         </div>
                     </div>
