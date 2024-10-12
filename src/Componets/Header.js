@@ -45,7 +45,30 @@ const Header = () => {
                                     <ul className='offcanvas-menu mt-4'>
                                         <li><Link>NEW ARRIVALS</Link></li>
                                         <li><Link>BEST SELLER</Link></li>
-                                        <li><Link> PRINTED FABRIC <i class="fa-solid fa-chevron-down float-end"></i></Link></li>
+                                        <li><Link data-bs-toggle="collapse" to="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> PRINTED FABRIC <i class="fa-solid fa-caret-down float-end"></i></Link>
+                                            <div class="collapse" id="collapseExample">
+                                                <div className='text-dark' >
+                                                    <ul className='offcanvas-sub-menu'>
+                                                        <li className='sub-menu-set'><Link><i class="fa-solid fa-angles-right  " style={{ letterSpacing: "10px" }}></i>Polyester Fabric</Link></li>
+                                                        <li><Link>- All</Link></li>
+                                                        <li><Link>- Japan Satin</Link></li>
+                                                        <li><Link>- Tusser Silk</Link></li>
+                                                    </ul>
+                                                    <ul className='offcanvas-sub-menu'>
+                                                        <li className='sub-menu-set'><Link><i class="fa-solid fa-angles-right  " style={{ letterSpacing: "10px" }}></i>Polyester Fabric</Link></li>
+                                                        <li><Link>- All</Link></li>
+                                                        <li><Link>- Japan Satin</Link></li>
+                                                        <li><Link>- Tusser Silk</Link></li>
+                                                    </ul>
+                                                    <ul className='offcanvas-sub-menu'>
+                                                        <li className='sub-menu-set'><Link><i class="fa-solid fa-angles-right  " style={{ letterSpacing: "10px" }}></i>Polyester Fabric</Link></li>
+                                                        <li><Link>- All</Link></li>
+                                                        <li><Link>- Japan Satin</Link></li>
+                                                        <li><Link>- Tusser Silk</Link></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
                                         <li><Link>FABRIC SET</Link></li>
                                         <li><Link>SALE</Link></li>
                                     </ul>
@@ -59,7 +82,7 @@ const Header = () => {
 
                         {/* Center: Logo */}
                         <div className="col-8 text-center">
-                            <h1 className="logo">FABRIC DEVI</h1>
+                            <h2 className="logo">FABRIC DEVI</h2>
                         </div>
 
                         {/* Right: User, Wishlist, Cart Icons */}
