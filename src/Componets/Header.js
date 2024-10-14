@@ -171,14 +171,14 @@ const Header = () => {
             </header>
             {showModal && (
                 <div className="modal fade show d-block" tabIndex="-1" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} role="dialog">
-                    <div className="modal-dialog modal-dialog-centered" role="document">
-                        <div className="modal-content">
+                    <div className="modal-dialog modal-dialog-centered " role="document">
+                        <div className="modal-content py-4">
                             <div className="modal-header border-bottom-0">
                                 <h3 className="modal-title w-100 text-center">Login</h3>
                                 <button type="button" className="btn-close" onClick={toggleModal}></button>
                             </div>
-                            <div className="modal-body">
-                                <p className="text-center mb-4">Please enter your e-mail and password:</p>
+                            <div className="modal-body ">
+                                <p className="text-center mb-4">Please enter your e-mail and password</p>
                                 <form className='mx-4'>
                                     <div className="mb-3">
                                         <label htmlFor="email" className="form-label">Email</label>
@@ -191,12 +191,13 @@ const Header = () => {
                                     <div className="d-flex justify-content-end">
                                         <Link to="#" className=" text-dark">Forgot your password?</Link>
                                     </div>
-                                    <button type="submit" className="btn border-dark w-100 rounded-pill mt-3 py-3">LOGIN</button>
+                                    <button type="submit" className="btn border-dark w-100 rounded-pill mt-3 py-3 login-btn">LOGIN</button>
                                 </form>
                             </div>
                             <div className="modal-footer border-top-0 justify-content-center">
-                                <p>New customer? <Link href="#" className="text-decoration-none">Register</Link></p>
+                                <p>New customer? <Link to="/register" className=" text-dark">Register</Link></p>
                             </div>
+                          
                         </div>
                     </div>
                 </div>

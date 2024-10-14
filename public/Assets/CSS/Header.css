@@ -142,9 +142,9 @@
   margin-bottom: 5px;
 }
 
-.dropdown-item:hover {
+/* .dropdown-item:hover {
   text-decoration: underline;
-}
+} */
 
 /* dropdown-end */
 
@@ -248,7 +248,14 @@ serch bar */
 
 
 /* modal */
-
+.login-btn{
+  transition: 0.8s !important;
+}
+.login-btn:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+  transition: 0.8s !important;
+}
 
 
 @media (max-width: 768px) {
