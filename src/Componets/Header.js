@@ -179,23 +179,23 @@ const Header = () => {
                             </div>
                             <div className="modal-body">
                                 <p className="text-center mb-4">Please enter your e-mail and password:</p>
-                                <form>
+                                <form className='mx-4'>
                                     <div className="mb-3">
                                         <label htmlFor="email" className="form-label">Email</label>
-                                        <input type="email" className="form-control rounded-pill py-3" id="email" placeholder="Enter your email" />
+                                        <input type="email" className="form-control  py-3" id="email" placeholder="Enter your email" />
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="password" className="form-label">Password</label>
-                                        <input type="password" className="form-control rounded-pill py-3" id="password" placeholder="Enter your password" />
+                                        <input type="password" className="form-control  py-3" id="password" placeholder="Enter your password" />
                                     </div>
                                     <div className="d-flex justify-content-end">
-                                        <a href="#" className="text-decoration-none">Forgot your password?</a>
+                                        <Link to="#" className=" text-dark">Forgot your password?</Link>
                                     </div>
-                                    <button type="submit" className="btn btn-dark w-100 rounded-pill mt-3 py-3">LOGIN</button>
+                                    <button type="submit" className="btn border-dark w-100 rounded-pill mt-3 py-3">LOGIN</button>
                                 </form>
                             </div>
                             <div className="modal-footer border-top-0 justify-content-center">
-                                <p>New customer? <a href="#" className="text-decoration-none">Register</a></p>
+                                <p>New customer? <Link href="#" className="text-decoration-none">Register</Link></p>
                             </div>
                         </div>
                     </div>
