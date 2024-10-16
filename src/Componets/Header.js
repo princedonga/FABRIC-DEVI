@@ -36,9 +36,9 @@ const Header = () => {
             </div>
             <header className="py-2 container">
                 <div className="container-fluid">
-                    <div className="row align-items-center py-3">
+                    <div className="row responsive-set align-items-center py-3">
                         {/* Left: Search Icon */}
-                        <div className="col-3 d-flex align-items-center">
+                        <div className="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
                             <i className="fa-solid fa-bars icon d-lg-none  d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></i>
                             {/* offcanvas menu */}
 
@@ -56,21 +56,21 @@ const Header = () => {
                                                 <div className='text-dark' >
                                                     <ul className='offcanvas-sub-menu'>
                                                         <li className='sub-menu-set'><Link><i className="fa-solid fa-angles-right  " style={{ letterSpacing: "8px" }}></i>Polyester Fabric</Link></li>
-                                                        <li><Link>- All</Link></li>
-                                                        <li><Link>- Japan Satin</Link></li>
-                                                        <li><Link>- Tusser Silk</Link></li>
+                                                        <li><Link> All</Link></li>
+                                                        <li><Link> Japan Satin</Link></li>
+                                                        <li><Link> Tusser Silk</Link></li>
                                                     </ul>
                                                     <ul className='offcanvas-sub-menu'>
                                                         <li className='sub-menu-set'><Link><i className="fa-solid fa-angles-right  " style={{ letterSpacing: "8px" }}></i>Polyester Fabric</Link></li>
-                                                        <li><Link>- All</Link></li>
-                                                        <li><Link>- Japan Satin</Link></li>
-                                                        <li><Link>- Tusser Silk</Link></li>
+                                                        <li><Link> All</Link></li>
+                                                        <li><Link> Japan Satin</Link></li>
+                                                        <li><Link> Tusser Silk</Link></li>
                                                     </ul>
                                                     <ul className='offcanvas-sub-menu'>
                                                         <li className='sub-menu-set'><Link><i className="fa-solid fa-angles-right  " style={{ letterSpacing: "8px" }}></i>Polyester Fabric</Link></li>
-                                                        <li><Link>- All</Link></li>
-                                                        <li><Link>- Japan Satin</Link></li>
-                                                        <li><Link>- Tusser Silk</Link></li>
+                                                        <li><Link> All</Link></li>
+                                                        <li><Link> Japan Satin</Link></li>
+                                                        <li><Link> Tusser Silk</Link></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -105,12 +105,12 @@ const Header = () => {
                         </div>
 
                         {/* Center: Logo */}
-                        <div className="col-6 text-center">
-                            <h2 className="logo">FABRIC DEVI</h2>
+                        <div className="col-lg-6 col-md-6 col-sm-6 col-6  text-center">
+                            <h2 className="logo"><Link to="/" className=' text-decoration-none text-dark'>FABRIC DEVI</Link></h2>
                         </div>
 
                         {/* Right: User, Wishlist, Cart Icons */}
-                        <div className="col-3 d-flex justify-content-end align-items-center">
+                        <div className="col-lg-3 col-md-3 col-sm-3 col-3  d-flex justify-content-end align-items-center">
                             <i className="fa-regular fa-user icon" onClick={toggleModal}></i>
                             <div className="wishlist">
                                 <i className="fa-regular fa-heart icon"></i>
@@ -128,14 +128,14 @@ const Header = () => {
                         <div className='d-lg-block d-none'>
                             <nav className="navbar navbar-expand-lg">
                                 <ul className="navbar-nav mx-auto">
-                                    <li className="nav-item"><Link to="" className="nav-link">NEW ARRIVALS</Link></li>
+                                    <li className="nav-item"><Link to="" className="nav-link">NEW ARRIVALS </Link></li>
                                     <li className="nav-item">
                                         <Link to="" className="nav-link" >BEST SELLER</Link>
                                     </li>
                                     {/* PRINTED FABRIC with Dropdown */}
                                     <li className="nav-item dropdown">
                                         <Link to="" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                            PRINTED FABRIC
+                                            PRINTED FABRIC <i class="fa-solid fa-chevron-down hover-icon"></i>
                                         </Link>
                                         {/* Dropdown menu */}
                                         <div className="dropdown-menu">

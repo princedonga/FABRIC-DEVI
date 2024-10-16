@@ -81,7 +81,12 @@
   transform: scale3d(1, 1, 1);
   /* display: block; */
 }
-
+.hover-icon{
+  transition: 0.4s;
+}.hover-icon:hover{
+  transform: rotate(180deg);
+  transition: 0.4;
+}
 .dropdown-menu {
   background-color: white;
   border: none;
@@ -262,9 +267,13 @@ serch bar */
   .header .col-8 {
     text-align: left;
   }
+  .responsive-set{
+    margin-right: 10px !important;
+  }
 
   .logo {
-    font-size: 16px !important;
+    font-size: 15px !important;
+    letter-spacing: 1px;
   }
 
   /* .offcanvas-start{

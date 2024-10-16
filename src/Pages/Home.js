@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Productcard from '../Product/Productcard'
 function Home() {
     return (
         <div>
@@ -57,6 +57,16 @@ function Home() {
                     <div className='col-lg-3 col-md-6 col-sm-6 col-6 py-4'>
                         <div className=' overflow-hidden m-lg-0 m-1'>
                             <img src='Assets/img/bestselller-4.png' className='img-fluid rounded offers-img' alt='special-offer'></img>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className='container'>
+                <div className='row'>
+                    <div className='col-lg-3'>
+                        <div>
+                            
+                            <Productcard></Productcard>
                         </div>
                     </div>
                 </div>
