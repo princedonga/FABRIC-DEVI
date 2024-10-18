@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #6f222a;
+  --secondary-color: #2ecc71;
+  --banner-color:#ffd282;
+  --main-color:#fff;
+ ---black-color:#000;
+}
+.card-video {
+    width: 92%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+  
+  .card-video:hover {
+    transform: translateY(-5px);
+  }
+  
+  .discount-tag {
+    position: absolute;
+    background-color: #ff5c5c;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+    border-radius: 3px;
+  }
+  
+  .video-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .video-container img{
+    position: absolute;
+    bottom: 0;
+    width: 17%;
+    height: 9%;
+    border-radius: 10px;
+    left: 2%;
+  }
+  .card-content {
+    padding: 10px;
+  }
+  
+  .product-name {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .price-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .new-price {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .old-price {
+    font-size: 12px;
+    color: #aaa;
+    text-decoration: line-through;
+  }
+  

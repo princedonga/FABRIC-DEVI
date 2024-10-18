@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../Pages/Home'
 import Register from '../UserRegister/Register'
+import NewArrivel from '../Pages/NewArrivel'
 
 function Router() {
     return (
@@ -10,6 +11,7 @@ function Router() {
             <Routes>
                 <Route path='/' element={<Home></Home>}></Route>
                 <Route path='/register' element={<Register></Register>}></Route>
+                <Route path='/NewArrivel' element={<NewArrivel></NewArrivel>}></Route>
             </Routes>
         </div>
     )

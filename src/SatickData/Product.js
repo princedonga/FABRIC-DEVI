@@ -13,7 +13,7 @@ const Products = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
+        discount: 100,  
         image01: product_01_01
 
     },

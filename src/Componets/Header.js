@@ -49,7 +49,7 @@ const Header = () => {
                                 </div>
                                 <div className="offcanvas-body">
                                     <ul className='offcanvas-menu mt-4'>
-                                        <li><Link>NEW ARRIVALS</Link></li>
+                                        <li><Link to="/NewArrivel">NEW ARRIVALS</Link></li>
                                         <li><Link>BEST SELLER</Link></li>
                                         <li><Link data-bs-toggle="collapse" to="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> PRINTED FABRIC <i className="fa-solid fa-caret-down float-end"></i></Link>
                                             <div className="collapse" id="collapseExample">
@@ -128,7 +128,7 @@ const Header = () => {
                         <div className='d-lg-block d-none'>
                             <nav className="navbar navbar-expand-lg">
                                 <ul className="navbar-nav mx-auto">
-                                    <li className="nav-item"><Link to="" className="nav-link">NEW ARRIVALS </Link></li>
+                                    <li className="nav-item"><Link to="/NewArrivel" className="nav-link">NEW ARRIVALS </Link></li>
                                     <li className="nav-item">
                                         <Link to="" className="nav-link" >BEST SELLER</Link>
                                     </li>

@@ -1,11 +1,15 @@
 .product-card {
-  width: 250px;
+  width: 92%;
   border-radius: 3px;
   overflow: hidden;
   background-color: white;
   /* font-family: Arial, sans-serif; */
   position: relative;
 
+}
+
+.product-card-main {
+  width: 90% !important;
 }
 
 .product-image-container {
@@ -75,13 +79,13 @@
 
 .rating {
   display: flex;
- 
+
   align-items: center;
   margin: 10px 0;
 }
 
-.stars i{
-  color: #F1C40F ;
+.stars i {
+  color: #F1C40F;
   /* background-color: #F1C40F; */
   margin: 0 3px;
   border-radius: 5px;
@@ -115,7 +119,7 @@
 .add-to-cart-btn {
   background-color: #fff;
   color: #000;
-  padding: 10px 50px;
+  padding: 10px 80px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -123,7 +127,7 @@
   position: absolute;
   bottom: 10px;
   /* left: 50%; */
-  right: -23%;
+  right: -31%;
   transform: translate(-50%, 50%);
   opacity: 0;
   transition: all 0.5s ease;
@@ -137,4 +141,66 @@
 .add-to-cart-btn:hover {
   background-color: #000;
   color: #fff;
+}
+
+/* mainproductcard */
+.product-card-main {
+  width: 90% !important;
+}
+
+.add-to-cart-btn-main {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 80px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  bottom: 10px;
+  /* right: 10px; */
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* Hover effect to show the Add to Cart button */
+.product-image-container:hover .add-to-cart-btn-main {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.add-to-cart-btn-main:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Add some dynamic behavior based on number of columns */
+.col-lg-6 .add-to-cart-btn-main {
+  padding: 10px 150px;
+  right: 11% !important;
+  /* Adjust padding for 2-column layout */
+}
+
+.col-lg-4 .add-to-cart-btn-main {
+  padding: 10px 90px;
+  right: 11% !important;
+  /* Adjust padding for 3-column layout */
+}
+
+.col-lg-3 .add-to-cart-btn-main {
+  padding: 10px 52px;
+  right: 11% !important;
+  /* Default for 4-column layout */
+}
+
+@media(max-width:576px){
+    .stars i{
+      font-size: 15px !important;
+      margin: 10px 0px !important;
+    }
+    .reviews {
+      margin-left: 0px;
+      color: #555;
+      font-size: 15px !important;
+    }
 }

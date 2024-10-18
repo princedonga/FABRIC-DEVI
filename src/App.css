@@ -1,7 +1,13 @@
-
-*{
+* {
     font-family: "Nunito Sans", sans-serif;
 }
+:root {
+    --primary-color: #6f222a;
+    --secondary-color: #2ecc71;
+    --banner-color:#ffd282;
+    --main-color:#fff;
+   ---black-color:#000;
+  }
 ::-webkit-scrollbar {
     width: 4px;
 }
@@ -15,3 +21,81 @@
     background-color: #ccc;
     border-radius: 5px;
 }
+
+/* banner */
+
+.banner-container {
+
+    background-image: url('../public/Assets/img/banner-1.png');
+
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(12, 12, 12, 0.5); */
+    /* Dark overlay effect */
+}
+
+.banner-content {
+    position: relative;
+    text-align: center;
+    z-index: 1; 
+}
+
+.banner-content h4 {
+    font-size: 29px;
+    color: var(--banner-color);
+    /* Gold color */
+    margin: 0;
+    font-weight: 700;
+}
+
+.banner-content p {
+    color:var(--main-color);
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.follow-button {
+    background-color: var(--banner-color);
+    /* Button background color */
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.follow-button:hover {
+    background-color: #d8a636;
+    /* Hover effect */
+}
+.banner-2-container{
+    background-image: url('../public/Assets/img/banner-2png.png');
+
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* banner */
