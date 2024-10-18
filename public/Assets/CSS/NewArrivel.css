@@ -182,7 +182,9 @@
 }
 
 /* filter color */
-
+.border-set{
+  border-bottom: 1px solid #ccc;
+}
 @media(max-width:576px){
   .main-baaner{
     width: 100% !important;

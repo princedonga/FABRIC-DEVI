@@ -1,15 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ProductCard({ product }) {
   return (
     <div className="product-card">
       <div className="product-image-container">
         <span className="discount-badge">-{product.discount}%</span>
-        <img
-          src={product.image01}
-          alt={product.title}
-          className="product-image"
-        />
+        <Link to="/Product">
+          <img
+            src={product.image01}
+            alt={product.title}
+            className="product-image"
+          />
+        </Link>
+
         <div className="overlay-icons">
           <button className="wishlist-btn"><i className="fa-regular fa-heart"></i></button>
           <button className="compare-btn"><i className="fa-solid fa-eye"></i></button>

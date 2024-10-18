@@ -28,60 +28,36 @@ function NewArrivel() {
                     {/* Filter Section */}
                     <div className="col-lg-3 col-md-4 col-sm-12 filter-section ">
                         <h5>Filter:</h5>
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        Availability
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <label className='fs-6'>In Stock</label>
-                                        <input type='checkbox' className='ms-2 '></input><br />
-                                        <label className='fs-6'>Out Of Stock</label>
-                                        <input type='checkbox' className=' ms-2'></input>
+                        <div className='py-3 '>
+                            <h5>Availability</h5>
+                            <div className='border-set pb-3'>
+                                <label className='fs-6'>In Stock</label>
+                                <input type='checkbox' className='ms-2 '></input><br />
+                                <label className='fs-6'>Out Of Stock</label>
+                                <input type='checkbox' className=' ms-2'></input>
+                            </div>
+                            <div className='py-4 border-set'>
+                                <h5 className='py-3'>Price</h5>
+                                <div class="range-slider">
+                                    <input type="range" min="0" max="1799" step="1" class="slider" id="myRange" />
+                                </div>
+                                <div className='row mt-4'>
+                                    <div className='col-6'>
+                                        <label className='form-label '>₹</label>
+                                        <input type='number' className='form-control'></input>
+                                    </div>
+                                    <div className='col-6'>
+                                        <label className='form-label '>₹</label>
+                                        <input type='number' className='form-control '></input>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        Price
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="range-slider">
-                                            <input type="range" min="0" max="1799" step="1" class="slider" id="myRange" />
-                                        </div>
-                                        <div className='row mt-4'>
-                                            <div className='col-6'>
-                                                <label className='form-label '>₹</label>
-                                                <input type='number' className='form-control'></input>
-                                            </div>
-                                            <div className='col-6'>
-                                                <label className='form-label '>₹</label>
-                                                <input type='number' className='form-control '></input>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        Color
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-
-                                        <FilteColor></FilteColor>
-                                    </div>
-                                </div>
+                            <div className='py-4 ' >
+                                <h5>Color</h5>
+                                <FilteColor></FilteColor>
                             </div>
                         </div>
+
                     </div>
 
                     {/* Product Section */}

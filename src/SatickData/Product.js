@@ -13,8 +13,11 @@ const Products = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 100,  
-        image01: product_01_01
+        discount: 100,
+        image01: product_01_01,
+        image02: product_01_01,
+        image03: product_01_01,
+        image04: product_01_01,
 
     },
     {
@@ -23,8 +26,11 @@ const Products = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
-        image01: product_02_01
+        discount: 10,
+        image01: product_02_01,
+        image02: product_01_01,
+        image03: product_01_01,
+        image04: product_01_01,
 
     },
     {
@@ -33,8 +39,11 @@ const Products = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
-        image01: product_03_01
+        discount: 10,
+        image01: product_03_01,
+        image02: product_01_01,
+        image03: product_01_01,
+        image04: product_01_01,
 
     },
     {
@@ -43,8 +52,11 @@ const Products = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
-        image01: product_04_01
+        discount: 10,
+        image01: product_04_01,
+        image02: product_01_01,
+        image03: product_01_01,
+        image04: product_01_01,
 
     },
     {
@@ -53,8 +65,11 @@ const Products = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
-        image01: product_05_01
+        discount: 10,
+        image01: product_05_01,
+        image02: product_01_01,
+        image03: product_01_01,
+        image04: product_01_01,
 
     },
     {
@@ -63,8 +78,11 @@ const Products = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
-        image01: product_06_01
+        discount: 10,
+        image01: product_06_01,
+        image02: product_01_01,
+        image03: product_01_01,
+        image04: product_01_01,
 
     }
 ]
