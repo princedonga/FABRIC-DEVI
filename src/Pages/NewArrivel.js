@@ -70,7 +70,7 @@ function NewArrivel() {
                                 <button className='btn bg-light ms-2' onClick={() => handleGridChange(4)}>||||</button>
                             </div>
                             <div className="">
-                              <CustomSelect></CustomSelect>
+                                <CustomSelect></CustomSelect>
                             </div>
                         </div>
 

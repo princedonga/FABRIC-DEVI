@@ -1,7 +1,7 @@
 import React from 'react';
 // import './Videocard.css'; // Import the CSS for the styles
 
-function Videocard({ video, title, price, discount  }) {
+function Videocard({ video, title, price, discount }) {
   return (
     <div className="card-video">
       <div className="discount-tag">{discount}% OFF</div>

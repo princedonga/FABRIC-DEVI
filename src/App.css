@@ -101,29 +101,21 @@
     position: relative;
 }
 
-/* banner */
-
-
-/* Styling the container for the dropdown */
 .custom-select-container {
     position: relative;
     width: 300px;
 }
 
-/* Styling the displayed select box */
 .custom-select {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: #f9f9f9; */
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
-    /* border: 1px solid #ccc; */
     border-radius: 5px;
 }
 
-/* The dropdown menu styling */
 .custom-options {
     position: absolute;
     top: 110%;
@@ -137,12 +129,10 @@
     z-index: 999;
 }
 
-/* Show dropdown when active */
 .custom-select-container.active .custom-options {
     display: block;
 }
 
-/* Styling individual option */
 .custom-option {
     padding: 10px;
     font-size: 16px;
@@ -150,19 +140,16 @@
     transition: background-color 0.3s ease;
 }
 
-/* Hover and selected styles */
 .custom-option:hover,
 .custom-option.selected {
     background-color: #eaeaea;
 }
 
-/* Arrow styling */
 .arrow {
     font-size: 12px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;    
 }
 
-/* Rotate arrow when dropdown is active */
 .custom-select-container.active .arrow {
     transform: rotate(180deg);
 }
