@@ -1,13 +1,15 @@
 * {
     font-family: "Nunito Sans", sans-serif;
 }
+
 :root {
     --primary-color: #6f222a;
     --secondary-color: #2ecc71;
-    --banner-color:#ffd282;
-    --main-color:#fff;
-   ---black-color:#000;
-  }
+    --banner-color: #ffd282;
+    --main-color: #fff;
+    ---black-color: #000;
+}
+
 ::-webkit-scrollbar {
     width: 4px;
 }
@@ -52,7 +54,7 @@
 .banner-content {
     position: relative;
     text-align: center;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .banner-content h4 {
@@ -64,7 +66,7 @@
 }
 
 .banner-content p {
-    color:var(--main-color);
+    color: var(--main-color);
     margin: 10px 0;
     font-size: 15px;
 }
@@ -85,7 +87,8 @@
     background-color: #d8a636;
     /* Hover effect */
 }
-.banner-2-container{
+
+.banner-2-container {
     background-image: url('../public/Assets/img/banner-2png.png');
 
     background-size: cover;
@@ -101,6 +104,65 @@
 /* banner */
 
 
-/* productdetails */
+/* Styling the container for the dropdown */
+.custom-select-container {
+    position: relative;
+    width: 300px;
+}
 
-  
+/* Styling the displayed select box */
+.custom-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #f9f9f9; */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+}
+
+/* The dropdown menu styling */
+.custom-options {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 999;
+}
+
+/* Show dropdown when active */
+.custom-select-container.active .custom-options {
+    display: block;
+}
+
+/* Styling individual option */
+.custom-option {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover and selected styles */
+.custom-option:hover,
+.custom-option.selected {
+    background-color: #eaeaea;
+}
+
+/* Arrow styling */
+.arrow {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when dropdown is active */
+.custom-select-container.active .arrow {
+    transform: rotate(180deg);
+}

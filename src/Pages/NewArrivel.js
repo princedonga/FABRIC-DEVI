@@ -3,6 +3,7 @@ import Products from '../SatickData/Product'; // Assuming the product data is he
 // import ProductCard from '../Product/Productcard';
 import MainProductcard from '../Product/MainProductcard';
 import FilteColor from '../Componets/FilteColor';
+import CustomSelect from '../Componets/CustomSelect';
 
 function NewArrivel() {
     const [columns, setColumns] = useState(4);
@@ -68,14 +69,8 @@ function NewArrivel() {
                                 <button className='btn bg-light ms-2' onClick={() => handleGridChange(3)}>|||</button>
                                 <button className='btn bg-light ms-2' onClick={() => handleGridChange(4)}>||||</button>
                             </div>
-                            <div className="sort-options">
-                                <span>Sort By:</span>
-                                <select className='form-select'>
-                                    <option>Best Selling</option>
-                                    <option>New Arrivals</option>
-                                    <option>Price: Low to High</option>
-                                    <option>Price: High to Low</option>
-                                </select>
+                            <div className="">
+                              <CustomSelect></CustomSelect>
                             </div>
                         </div>
 
