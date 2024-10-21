@@ -4,10 +4,10 @@
 
 :root {
     --primary-color: #6f222a;
-    --secondary-color: #2ecc71;
+    --secondary-color: #000;
     --banner-color: #ffd282;
     --main-color: #fff;
-    ---black-color: #000;
+    --black-color: #000;
 }
 
 ::-webkit-scrollbar {

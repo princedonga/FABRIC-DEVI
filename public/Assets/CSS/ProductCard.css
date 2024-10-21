@@ -183,7 +183,7 @@
 
 .col-lg-4 .add-to-cart-btn-main {
   padding: 10px 90px;
-  right: 11% !important;
+  right: 11% ;
   /* Adjust padding for 3-column layout */
 }
 
@@ -192,7 +192,28 @@
   right: 11% !important;
   /* Default for 4-column layout */
 }
-
+@media (max-width:992px) {
+  /* .add-to-cart-btn-main{
+    display: none !important;
+  } */
+  .overlay-icons {
+    opacity: 1; /* Always visible for smaller devices */
+  }
+  .compare-btn {
+    display: none; /* Hide compare button for small screens */
+  }
+  
+  .wishlist-btn {
+    font-size: 15px;
+    padding: 5px 9px; /* Adjust padding */
+  }
+}
+@media(max-width:768px){
+  .wishlist-btn {
+    font-size: 18px;
+    padding: 6px 11px;
+  }
+}
 @media(max-width:576px){
     .stars i{
       font-size: 15px !important;
@@ -202,5 +223,9 @@
       margin-left: 0px;
       color: #555;
       font-size: 15px !important;
+    }
+    .wishlist-btn {
+      font-size: 15px;
+      padding: 5px 9px;
     }
 }

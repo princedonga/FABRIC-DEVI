@@ -11,11 +11,11 @@ function MainProductcard({ product }) {
                     className="product-image"
                 />
                 <div className="overlay-icons">
-                    <button className="wishlist-btn"><i className="fa-regular fa-heart"></i></button>
-                    <button className="compare-btn"><i className="fa-solid fa-eye"></i></button>
+                    <button className="wishlist-btn "><i className="fa-regular fa-heart"></i></button>
+                    <button className="compare-btn d-lg-block d-none"><i className="fa-solid fa-eye"></i></button>
                 </div>
                 <div>
-                    <button className="add-to-cart-btn-main">Add to Cart</button>
+                    <button className="add-to-cart-btn-main d-lg-block d-none">Add to Cart</button>
                 </div>
             </div>
             <div className="product-details">

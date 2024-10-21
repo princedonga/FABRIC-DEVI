@@ -63,13 +63,13 @@ function NewArrivel() {
 
                     {/* Product Section */}
                     <div className="col-lg-9 col-md-8 col-sm-12">
-                        <div className="sort-bar d-flex justify-content-between">
-                            <div className='m-2'>
+                        <div className=" row ">
+                            <div className=' col-6 d-lg-block d-none'>
                                 <button className='btn bg-light' onClick={() => handleGridChange(2)}>||</button>
                                 <button className='btn bg-light ms-2' onClick={() => handleGridChange(3)}>|||</button>
                                 <button className='btn bg-light ms-2' onClick={() => handleGridChange(4)}>||||</button>
                             </div>
-                            <div className="">
+                            <div className="col-6 col-6 d-lg-block d-none ">
                                 <CustomSelect></CustomSelect>
                             </div>
                         </div>

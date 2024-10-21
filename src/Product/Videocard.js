@@ -10,7 +10,7 @@ function Videocard({ video, title, price, discount }) {
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <img src="https://cdn.shopify.com/s/files/1/0712/5014/9624/files/Pink-Banarasi-Saree-For-Women-With-Blouse_100x.jpg?v=1725763227"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0712/5014/9624/files/Pink-Banarasi-Saree-For-Women-With-Blouse_100x.jpg?v=1725763227" alt=''></img>
       </div>
       <div className="card-content">
         <h4 className="product-name">{title}</h4>

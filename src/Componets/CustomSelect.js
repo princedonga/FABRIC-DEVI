@@ -38,7 +38,7 @@ const CustomSelect = () => {
     }, []);
 
     return (
-        <div className={`custom-select-container ${isOpen ? 'active' : ''}`} ref={selectContainerRef}>
+        <div className={`custom-select-container float-end ${isOpen ? 'active' : ''}`} ref={selectContainerRef}>
             <div className="custom-select" onClick={toggleDropdown}>
                 Sort By: <span id="selected-option">{selectedOption}</span>
                 <span className="arrow">▾</span>

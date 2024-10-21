@@ -88,9 +88,9 @@ const Header = () => {
                             {/* SearchBar */}
 
 
-                            <div className="offcanvas offcanvas-end" style={{minWidth:"37%"}} tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExamicon1pleLabel">
+                            <div className="offcanvas offcanvas-end" style={{ minWidth: "37%" }} tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExamicon1pleLabel">
                                 <div className="offcanvas-header">
-                                    <h6 className="offcanvas-title" id="offcanvasExampleLabel" style={{color:"#ccc"}}>WHAT ARE YOU LOOKIN FOR ?</h6>
+                                    <h6 className="offcanvas-title" id="offcanvasExampleLabel" style={{ color: "#ccc" }}>WHAT ARE YOU LOOKIN FOR ?</h6>
                                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div className="offcanvas-body">
@@ -177,27 +177,27 @@ const Header = () => {
                                 <h3 className="modal-title w-100 text-center">Login</h3>
                                 <button type="button" className="btn-close" onClick={toggleModal}></button>
                             </div>
-                            <div className="modal-body ">
+                            <div className="modal-body px-4">
                                 <p className="text-center mb-4">Please enter your e-mail and password</p>
-                                <form className='mx-4'>
-                                    <div className="mb-3">
-                                        <label htmlFor="email" className="form-label">Email</label>
-                                        <input type="email" className="form-control  py-3" id="email" placeholder="Enter your email" />
+                                <form className='form px-3 py-3'>
+                                    <div className="form__div mb-4">
+                                        <input type="email" className="form__input " placeholder=" " />
+                                        <label className="form__label">Email</label>
                                     </div>
-                                    <div className="mb-3">
-                                        <label htmlFor="password" className="form-label">Password</label>
-                                        <input type="password" className="form-control  py-3" id="password" placeholder="Enter your password" />
+                                    <div className="form__div mb-4">
+                                        <input type="password" className="form__input " placeholder=" " />
+                                        <label className="form__label">Password</label>
                                     </div>
-                                    <div className="d-flex justify-content-end">
-                                        <Link to="#" className=" text-dark">Forgot your password?</Link>
+                                    <div className='float-end py-3'>
+                                        <p><Link className='text-dark'>Forget You Password</Link></p>
                                     </div>
-                                    <button type="submit" className="btn border-dark w-100 rounded-pill mt-3 py-3 login-btn">LOGIN</button>
+                                    <button type="submit" className="btn border-dark w-100 rounded-pill my-4 py-3 login-btn d-block mx-auto">Register</button>
                                 </form>
                             </div>
                             <div className="modal-footer border-top-0 justify-content-center">
                                 <p>New customer? <Link to="/register" className=" text-dark">Register</Link></p>
                             </div>
-                          
+
                         </div>
                     </div>
                 </div>
