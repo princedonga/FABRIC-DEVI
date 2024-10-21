@@ -9,7 +9,6 @@ import UserLogin from '../UserRegister/UserLogin'
 function Router() {
     return (
         <div>
-
             <Routes>
                 <Route path='/' element={<Home></Home>}></Route>
                 <Route path='/register' element={<Register></Register>}></Route>

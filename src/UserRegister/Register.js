@@ -28,7 +28,7 @@ function Register() {
                                 <input type="password" className="form__input " placeholder=" " />
                                 <label className="form__label">Password</label>
                             </div>
-                           
+
                             <button type="submit" className="btn border-dark w-100 rounded-pill my-4 py-3 login-btn d-block mx-auto">Register</button>
                             <div className='text-center py-4'>
                                 <p>Already a Member?<Link to="/login" className='ms-2 text-dark'>Login</Link></p>

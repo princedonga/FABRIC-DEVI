@@ -76,13 +76,13 @@ function NewArrivel() {
 
                         {/* Products Grid */}
                         <div className='container-fluid'>
-                            <div className="row p-2">
+                            <div className="row ">
                                 {Products.map((product) => (
                                     <div
                                         className={`col-lg-${12 / columns} col-md-4 col-sm-6 col-6 p-0`} // Adjust columns dynamically
                                         key={product.id}
                                     >
-                                        <div className='w-100'>
+                                        <div className=''>
                                             <MainProductcard product={product} />
                                         </div>
                                     </div>

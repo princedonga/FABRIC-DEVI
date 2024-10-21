@@ -21,11 +21,13 @@
     margin-right: 12px !important;
     margin-left: 3px;
 }
-.offers-img{
+
+.offers-img {
     transition: 1s;
     cursor: pointer;
 }
-.offers-img:hover{
+
+.offers-img:hover {
     transform: scale(1.1);
     transition: 1s;
 }

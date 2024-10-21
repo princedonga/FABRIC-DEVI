@@ -20,9 +20,9 @@ const Vedios = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 100,  
+        discount: 100,
         Viedo01: product_01_01,
-        image02:product_01_02
+        image02: product_01_02
     },
     {
         id: "02",
@@ -30,9 +30,9 @@ const Vedios = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
+        discount: 10,
         Viedo01: product_02_01,
-        image02:product_02_02
+        image02: product_02_02
     },
     {
         id: "03",
@@ -40,9 +40,9 @@ const Vedios = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
+        discount: 10,
         Viedo01: product_03_01,
-        image02:product_02_03
+        image02: product_02_03
 
     },
     {
@@ -51,9 +51,9 @@ const Vedios = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
+        discount: 10,
         Viedo01: product_04_01,
-        image02:product_04_04
+        image02: product_04_04
 
     },
     {
@@ -62,9 +62,9 @@ const Vedios = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
+        discount: 10,
         Viedo01: product_05_01,
-        image02:product_05_05
+        image02: product_05_05
 
     },
     {
@@ -73,9 +73,9 @@ const Vedios = [
         price: 1699,
         category: "SARI",
         size: "FREE",
-        discount: 10,  
+        discount: 10,
         Viedo01: product_06_01,
-        image02:product_06_06
+        image02: product_06_06
 
     }
 ]

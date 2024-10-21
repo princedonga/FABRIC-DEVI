@@ -8,9 +8,9 @@
 
 }
 
-.product-card-main {
-  width: 90% !important;
-}
+/* .product-card-main {
+  width: 110% !important;
+} */
 
 .product-image-container {
   position: relative;
@@ -30,6 +30,7 @@
   color: white;
   padding: 2px 9px;
   border-radius: 2px;
+  z-index: 999999;
 }
 
 .overlay-icons {
@@ -71,10 +72,10 @@
   font-size: 15px;
 }
 
-.product-title {
+.product-title-card {
   font-size: 15px;
   color: #333;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
 .rating {
@@ -98,9 +99,9 @@
   color: #555;
 }
 
-.price {
+.price-card {
   margin: 10px 0;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .current-price {
@@ -111,7 +112,7 @@
 
 .original-price {
   text-decoration: line-through;
-  margin-left: 10px;
+  margin-left: 5px;
   color: #777;
   font-size: 15px;
 }
@@ -145,7 +146,7 @@
 
 /* mainproductcard */
 .product-card-main {
-  width: 90% !important;
+  width: 92% !important;
 }
 
 .add-to-cart-btn-main {
@@ -183,7 +184,7 @@
 
 .col-lg-4 .add-to-cart-btn-main {
   padding: 10px 90px;
-  right: 11% ;
+  right: 11%;
   /* Adjust padding for 3-column layout */
 }
 
@@ -192,40 +193,62 @@
   right: 11% !important;
   /* Default for 4-column layout */
 }
+
 @media (max-width:992px) {
+
   /* .add-to-cart-btn-main{
     display: none !important;
   } */
   .overlay-icons {
-    opacity: 1; /* Always visible for smaller devices */
+    opacity: 1;
+    /* Always visible for smaller devices */
   }
+
   .compare-btn {
-    display: none; /* Hide compare button for small screens */
+    display: none;
+    /* Hide compare button for small screens */
   }
-  
+
   .wishlist-btn {
     font-size: 15px;
-    padding: 5px 9px; /* Adjust padding */
+    padding: 5px 9px;
+    /* Adjust padding */
   }
 }
-@media(max-width:768px){
+
+@media(max-width:768px) {
   .wishlist-btn {
     font-size: 18px;
     padding: 6px 11px;
   }
 }
-@media(max-width:576px){
-    .stars i{
-      font-size: 15px !important;
-      margin: 10px 0px !important;
-    }
-    .reviews {
-      margin-left: 0px;
-      color: #555;
-      font-size: 15px !important;
-    }
-    .wishlist-btn {
-      font-size: 15px;
-      padding: 5px 9px;
-    }
+
+@media(max-width:576px) {
+  .stars i {
+    font-size: 15px !important;
+    margin: 10px 0px !important;
+  }
+
+  .reviews {
+    margin-left: 0px;
+    color: #555;
+    font-size: 15px !important;
+  }
+
+  .wishlist-btn {
+    font-size: 15px;
+    padding: 5px 9px;
+  }
+}
+
+@media(max-width:446px) {
+  .product-card-main {
+    width: 95% !important;
+    /* gap: 10px !important; */
+    /* margin:  10px !important; */
+  }
+
+  .product-title-card {
+    font-size: 15px !important;
+  }
 }

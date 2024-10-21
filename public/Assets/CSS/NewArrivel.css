@@ -76,11 +76,12 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #ff0000;
+  background-color: #000;
   color: #fff;
   padding: 5px 10px;
   border-radius: 3px;
   font-size: 0.8rem;
+  z-index: 99;
 }
 
 .product-title {
@@ -182,11 +183,12 @@
 }
 
 /* filter color */
-.border-set{
+.border-set {
   border-bottom: 1px solid #ccc;
 }
-@media(max-width:576px){
-  .main-baaner{
+
+@media(max-width:576px) {
+  .main-baaner {
     width: 100% !important;
     height: 100% !important;
   }
