@@ -5,6 +5,7 @@ import Register from '../UserRegister/Register'
 import NewArrivel from '../Pages/NewArrivel'
 import ProductDetails from '../Product/ProductDetails'
 import UserLogin from '../UserRegister/UserLogin'
+import Cart from '../Componets/Cart'
 
 function Router() {
     return (
@@ -15,6 +16,7 @@ function Router() {
                 <Route path='/NewArrivel' element={<NewArrivel></NewArrivel>}></Route>
                 <Route path='/Product' element={<ProductDetails></ProductDetails>}></Route>
                 <Route path='/login' element={<UserLogin></UserLogin>}></Route>
+                <Route path='/cart' element={<Cart></Cart>}></Route>
             </Routes>
         </div>
     )

@@ -267,6 +267,9 @@ serch bar */
   transition: 0.8s !important;
 }
 
+/* .offcanvas-end {
+  width: 35% !important;
+} */
 
 @media (max-width: 768px) {
   .header .col-8 {

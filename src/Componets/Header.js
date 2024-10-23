@@ -88,15 +88,15 @@ const Header = () => {
                             {/* SearchBar */}
 
 
-                            <div className="offcanvas offcanvas-end" style={{ minWidth: "37%" }} tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExamicon1pleLabel">
+                            <div className="offcanvas offcanvas-start" style={{ minWidth: "37%" }} tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExamicon1pleLabel">
                                 <div className="offcanvas-header">
                                     <h6 className="offcanvas-title" id="offcanvasExampleLabel" style={{ color: "#ccc" }}>WHAT ARE YOU LOOKIN FOR ?</h6>
                                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div className="offcanvas-body">
-                                    <div class="search-container">
+                                    <div className="search-container">
                                         <input type="text" placeholder="Search Products..." />
-                                        <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        <span className="search-icon"><i className="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
                                 </div>
                             </div>
@@ -117,20 +117,60 @@ const Header = () => {
                                 <span className="wishlist-count">0</span>
                             </div>
                             <div className="cart">
-                                <i className="fa-solid fa-cart-shopping icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"></i>
-                                <span className="ms-1 cart-count">(0)</span>
-                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                <i className="fa-solid fa-cart-shopping icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas"></i>
+                                <span className="ms-1 cart-count">(1)</span>
+
+
+                                <div className="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel" style={{ minWidth: "33%" }}>
+                                    <div className="offcanvas-header">
+                                        <h5 className="offcanvas-title" id="cartOffcanvasLabel">Cart</h5>
+                                        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
-                                    <div class="offcanvas-body">
-                                        <div>
-                                            I will not close if you click outside of me.
+                                    <div className="offcanvas-body">
+
+                                        <div className="free-delivery">
+                                            <i className="fa-solid fa-box"></i> <span className='ms-3 pb-2'> Your order is free delivery!</span>
+                                        </div>
+
+
+                                        <div className="cart-item">
+                                            <div className="d-flex align-items-center">
+                                                <img src="https://cdn.shopify.com/s/files/1/0712/5014/9624/files/Forest-Green-Silk-Saree-For-Women-Floral-Print.jpg?v=1725715139" alt="Product Image" className="img-fluid me-3" />
+                                                <div>
+                                                    <p className="product-title">Royal Blue Kanjivaram Silk Saree With Pure Gold Zari Weaving</p>
+                                                    <p className="product-price">Rs. 1,799.00 x 1</p>
+
+                                                    <div className="quantity-control d-flex align-items-center">
+                                                        <button className="btn btn-outline-secondary btn-sm">-</button>
+                                                        <input type="text" value="1" className="form-control text-center mx-2" style={{ width: "50px" }} />
+                                                        <button className="btn btn-outline-secondary btn-sm">+</button>
+                                                    </div>
+                                                </div>
+                                                <Link to="#" className="ms-auto text-dark">Remove</Link>
+                                            </div>
+                                        </div>
+                                        <div className='cart-details' >
+                                            <hr />
+                                            <div className="order-note ">
+                                                <i className="fa-solid fa-sticky-note"></i> Order Note
+                                            </div>
+                                            <hr />
+
+                                            <div className="total-section">
+                                                <p>Total: <span className="float-end">Rs. 1,799.00</span></p>
+                                                <p>Taxes and shipping calculated at checkout</p>
+                                            </div>
+
+                                            <div className="d-flex justify-content-between cart-btn">
+                                                <button className="btn border-dark rounded-pill my-4 py-3 "><Link to="/cart" className='text-dark text-decoration-none'>View Cart</Link></button>
+                                                <button className="btn border-dark rounded-pill my-4 py-3 ">Check Out</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -146,7 +186,7 @@ const Header = () => {
                                     {/* PRINTED FABRIC with Dropdown */}
                                     <li className="nav-item dropdown">
                                         <Link to="" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                            PRINTED FABRIC <i class="fa-solid fa-chevron-down hover-icon"></i>
+                                            PRINTED FABRIC <i className="fa-solid fa-chevron-down hover-icon"></i>
                                         </Link>
                                         {/* Dropdown menu */}
                                         <div className="dropdown-menu">

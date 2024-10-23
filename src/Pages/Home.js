@@ -88,7 +88,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className='container'>
+            <section className='container-fluid px-5'>
                 <div className='row'>
                     <div className='col-lg-12 py-4'>
                         <div className='text-center '>
@@ -120,7 +120,7 @@ function Home() {
             <div className='text-center '>
                 <h3>BESTSELLER</h3>
             </div>
-            <section className='container py-5 '>
+            <section className='container-fluid py-5 px-5'>
                 <Slider {...settings}>
                     {Products.map((product) => (
                         <div key={product.id}>
@@ -132,7 +132,7 @@ function Home() {
             <div className='text-center '>
                 <h3>SHOP NOW</h3>
             </div>
-            <section className='container py-5'>
+            <section className='container-fluid px-5 py-5'>
                 <Slider {...settings}>
                     {Vedios.map((videoItem) => (
                         <div key={videoItem.id} style={{ width: "50%" }}>
@@ -149,7 +149,7 @@ function Home() {
             <div className='text-center '>
                 <h3>NEW ARRIVELS</h3>
             </div>
-            <section className='container py-5 '>
+            <section className='container-fluid px-5 py-5 '>
                 <Slider {...settings}>
                     {Products.map((product) => (
                         <div key={product.id}>
@@ -161,7 +161,7 @@ function Home() {
             <div className='text-center py-4'>
                 <h3>SHOP BY CATEGORY</h3>
             </div>
-            <section className='container'>
+            <section className='container-fluid px-5'>
                 <div className='row'>
                     <div className='col-lg-3 col-md-6 col-sm-6 col-6 py-4'>
                         <div className=' overflow-hidden m-lg-0 m-1'>
@@ -202,7 +202,7 @@ function Home() {
             <div className='text-center py-4'>
                 <h3>COLLECTIONS</h3>
             </div>
-            <section className='container'>
+            <section className='container-fluid px-5'>
                 <div className='row'>
                     <div className='col-lg-3 col-md-6 col-sm-6 col-6 py-4'>
                         <div className=' overflow-hidden m-lg-0 m-1'>

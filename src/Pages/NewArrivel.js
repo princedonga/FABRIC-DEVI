@@ -75,7 +75,7 @@ function NewArrivel() {
                         </div>
 
                         {/* Products Grid */}
-                        <div className='container-fluid'>
+                        <div className='container-fluid mt-4'>
                             <div className="row ">
                                 {Products.map((product) => (
                                     <div
