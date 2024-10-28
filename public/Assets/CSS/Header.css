@@ -19,8 +19,12 @@
   font-size: 20px;
   margin-left: 20px;
   cursor: pointer;
+  transition: 0.4s;
 }
-
+.icon:hover{
+  color: var(--primary-color);
+  transition: 0.4s;
+}
 .wishlist,
 .cart {
   position: relative;
@@ -28,8 +32,8 @@
 
 .wishlist-count {
   position: absolute;
-  top: 5px;
-  right: -15px;
+  top: 8px;
+  right: -11px;
   background-color: var(--primary-color);
   color: white;
   font-size: 12px;
@@ -141,8 +145,9 @@
 }
 
 .dropdown-header {
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .dropdown-item {

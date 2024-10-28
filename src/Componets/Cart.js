@@ -121,7 +121,7 @@ function Cart() {
             <div className='text-center py-3'>
                 <h2>You May Also Like</h2>
             </div>
-            <section className='container py-5 '>
+            <section className='container-fluid py-5 px-5 '>
                 <Slider {...settings}>
                     {Products.map((product) => (
                         <div key={product.id}>

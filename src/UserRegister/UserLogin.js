@@ -22,7 +22,7 @@ function UserLogin() {
                                 <label className="form__label">Password</label>
                             </div>
                             <div>
-                                <p><Link>Forget You Password</Link></p>
+                                <p><Link className='text-dark'>Forget You Password</Link></p>
                             </div>
                             <button type="submit" className="btn border-dark w-100 rounded-pill my-4 py-3 login-btn d-block mx-auto">Register</button>
                             <div className='text-center py-4'>

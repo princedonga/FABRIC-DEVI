@@ -78,7 +78,7 @@
   left: 10px;
   background-color: #000;
   color: #fff;
-  padding: 5px 10px;
+  padding: 3px 5px;
   border-radius: 3px;
   font-size: 0.8rem;
   z-index: 99;
@@ -92,7 +92,7 @@
 }
 
 .range-slider {
-  width: 300px;
+  width: 260px;
   /* Adjust the width as needed */
   display: flex;
   align-items: center;
@@ -160,9 +160,10 @@
   background-color: #000;
 }
 
-
+.svg-set{
+  width: 7% !important;
+}
 /* filter color */
-
 .filter-list ul {
   list-style-type: none;
   padding: 0;

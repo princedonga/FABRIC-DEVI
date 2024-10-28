@@ -31,7 +31,7 @@
     align-items: center;
 }
 .cart-btn button{
-    padding: 12px 60px !important;
+    padding: 12px 54px !important;
 }
 .cart-details{
     position: absolute;
@@ -48,3 +48,8 @@
 .cart .free-delivery i, .cart .order-note i {
     margin-right: 10px;
 }
+@media(max-width:446px) {
+    .cart-btn button{
+        padding: 12px 40px !important;
+    }
+  }

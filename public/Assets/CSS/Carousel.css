@@ -1,0 +1,108 @@
+.carousel {
+    position: relative;
+    /* width: 500px;
+    height: 250px; */
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .carousel-item.active {
+    display: block;
+  }
+
+  .carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel-controls button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    /* left: 0px; */
+    display: block;
+
+    text-align: center;
+  }
+
+  .carousel-indicators button {
+    width: 100px;
+    height: 2px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .4);
+    cursor: pointer;
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 5px;
+  }
+  .carousel-indicators button.active::after{
+      content:"";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 0;
+      background-color: #fff;
+      animation: loading 5s ;
+  }
+.carousel-img{
+    width: 100%;
+}
+  @keyframes loading{
+      0%{
+          width: 0;
+      }
+
+      100%{
+          width: 100px;
+      }
+  }
+
+  /* .bg-color-01{
+      background: navy;
+      width: 500px;
+      height: 250px;
+  }
+  .bg-color-02{
+      background: black;
+      width: 500px;
+      height: 250px;
+  }
+  .bg-color-03{
+      background: cornflowerblue;
+      width: 500px;
+      height: 250px;
+  }
+  .bg-color-04{
+      background: indigo;
+      width: 500px;
+      height: 250px;
+  } */

@@ -5,13 +5,15 @@ import Products from '../SatickData/Product';
 import Slider from "react-slick";
 import Videocard from '../Product/Videocard';
 import Vedios from '../SatickData/ProductVideo';
+import Carousel from '../Componets/Carousel';
 function Home() {
+    
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         responsive: [
             {
                 breakpoint: 1024,
@@ -43,15 +45,15 @@ function Home() {
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     initialSlide: 1
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             }
@@ -65,25 +67,7 @@ function Home() {
             <section className='container-fluid p-0 overflow-hidden '>
                 <div className='row'>
                     <div className='col-lg-12'>
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active carousel-button" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" className='carousel-button' data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" className='carousel-button' data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="500">
-                                    <img src="Assets/img/main-baner.jpg" class="d-block w-100" alt="..." />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/img/main-baner-1.jpg" class="d-block w-100" alt="..." />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/img/main-baner.jpg" class="d-block w-100" alt="..." />
-                                </div>
-                            </div>
-
-                        </div>
+                        <Carousel></Carousel>
                     </div>
                 </div>
             </section>
