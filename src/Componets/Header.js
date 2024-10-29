@@ -42,7 +42,7 @@ const Header = () => {
                             <i className="fa-solid fa-bars icon d-lg-none  d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></i>
                             {/* offcanvas menu */}
 
-                            <div className="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style={{maxWidth:"75%"}}>
+                            <div className="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style={{ maxWidth: "75%" }}>
                                 <div className="offcanvas-header">
                                     <h5 className="offcanvas-title logo fs-2" id="offcanvasScrollingLabel">FABRIC DEVI</h5>
                                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -51,7 +51,7 @@ const Header = () => {
                                     <ul className='offcanvas-menu mt-4'>
                                         <li><Link to="/NewArrivel">NEW ARRIVALS</Link></li>
                                         <li><Link>BEST SELLER</Link></li>
-                                        <li><Link  data-bs-toggle="collapse" to="#collapseExample " role="button" aria-expanded="false" aria-controls="collapseExample"> PRINTED FABRIC <i className="fa-solid fa-caret-down float-end"></i></Link>
+                                        <li><Link data-bs-toggle="collapse" to="#collapseExample " role="button" aria-expanded="false" aria-controls="collapseExample"> PRINTED FABRIC <i className="fa-solid fa-caret-down float-end"></i></Link>
                                             <div className="collapse" id="collapseExample">
                                                 <div className='text-dark' >
                                                     <ul className='offcanvas-sub-menu'>
@@ -112,7 +112,7 @@ const Header = () => {
                         {/* Right: User, Wishlist, Cart Icons */}
                         <div className="col-lg-3 col-md-3 col-sm-3 col-4  ">
                             <div className='d-flex align-items-center float-end me-lg-5 m-0'>
-                                <svg className='icon' onClick={toggleModal} xmlns="http://www.w3.org/2000/svg"  width="16" height="19" viewBox="0 0 16 19" fill="none">
+                                <svg className='icon' onClick={toggleModal} xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
                                     <circle cx="4" cy="4" r="4" transform="matrix(-1 0 0 1 12 1)" stroke="currentColor" stroke-width="1.5"></circle>
                                     <path d="M1 14.9347C1 14.0743 1.54085 13.3068 2.35109 13.0175V13.0175C6.00404 11.7128 9.99596 11.7128 13.6489 13.0175V13.0175C14.4591 13.3068 15 14.0743 15 14.9347V16.2502C15 17.4376 13.9483 18.3498 12.7728 18.1818L11.8184 18.0455C9.28565 17.6837 6.71435 17.6837 4.18162 18.0455L3.22721 18.1818C2.0517 18.3498 1 17.4376 1 16.2502V14.9347Z" stroke="currentColor" stroke-width="1.5"></path>
                                 </svg>
@@ -159,9 +159,11 @@ const Header = () => {
                                                         <p className="product-price">Rs. 1,799.00 x 1</p>
 
                                                         <div className="quantity-control d-flex align-items-center">
-                                                            <button className="btn btn-outline-secondary btn-sm">-</button>
-                                                            <input type="text" value="1" className="form-control text-center mx-2" style={{ width: "50px" }} />
-                                                            <button className="btn btn-outline-secondary btn-sm">+</button>
+                                                            <div className=' quantity-set rounded-pill me-2'>
+                                                                <button class="quantity-button btn">-</button>
+                                                                <input type="text" class="quantity-input" value="1" />
+                                                                <button class="quantity-button btn">+</button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <Link to="#" className="ms-auto text-dark">Remove</Link>
@@ -205,20 +207,20 @@ const Header = () => {
                                         <Link to="/printedfabric" className="nav-link " >
                                             PRINTED FABRIC <i className="fa-solid fa-chevron-down hover-icon"></i>
                                         </Link>
-                                              <div className="dropdown-menu">
+                                        <div className="dropdown-menu">
                                             <div className="dropdown-column">
                                                 <h6 className="dropdown-header text-dark">Polyester Fabric</h6>
                                                 <Link className="dropdown-item" to="#">All</Link>
                                                 <Link className="dropdown-item" to="#">Japan Satin</Link>
                                                 <Link className="dropdown-item" to="#">Tusser Silk</Link>
-                                           
+
                                             </div>
                                             <div className="dropdown-column">
                                                 <h6 className="dropdown-header text-dark">Pure & Viscose Fabric</h6>
                                                 <Link className="dropdown-item" to="#">All</Link>
                                                 <Link className="dropdown-item" to="#">Pure Cotton</Link>
                                                 <Link className="dropdown-item" to="#">Pure Chiffon</Link>
-                                               
+
                                             </div>
                                             <div className="dropdown-column">
                                                 <h6 className="dropdown-header text-dark">Fabric Quality</h6>
@@ -228,7 +230,7 @@ const Header = () => {
                                             </div>
                                         </div>
                                         {/* Dropdown menu */}
-                                  
+
                                     </li>
                                     <li className="nav-item"><Link to="" className="nav-link">FABRIC SET</Link></li>
                                     <li className="nav-item"><Link to="" className="nav-link">SALE</Link></li>

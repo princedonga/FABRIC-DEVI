@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 
 function ProductCard({ product }) {
   const [showModal, setShowModal] = useState(false);
@@ -69,22 +69,22 @@ function ProductCard({ product }) {
       {/* Modal for detailed product view */}
       <Modal show={showModal} onHide={handleCloseModal} size="lg" centered>
         <Modal.Header closeButton>
-          <Modal.Title>{product.title}</Modal.Title>
+          <Modal.Title></Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className='row'>
             <div className='col-6'>
-              <div className="modal-image-section">
+              <div className="">
                 <img
                   src={product.image01}
                   alt={product.title}
-                  className="modal-product-image img-fluid"
+                  className=" "
                   style={{ width: '100%' }}
                 />
               </div>
             </div>
             <div className='col-6'>
-              <div class="product-listing">
+              <div class="product-listing ">
                 <h2 class="product-title">Peach Pink Kanjivaram Silk Blend Pure Zari Weaving Saree</h2>
                 <div class="price-container">
                   <span class="price-current">Rs. 1,799.00</span>
@@ -95,12 +95,15 @@ function ProductCard({ product }) {
                   <p>CODE: SALE15 EXTRA...</p>
                 </div>
                 <div class="quantity-container">
-                  <button class="quantity-button btn">-</button>
-                  <input type="number" class="quantity-input" value="1" />
-                  <button class="quantity-button btn">+</button>
+                  <div className=' quantity-set rounded-pill me-2'>
+                    <button class="quantity-button btn">-</button>
+                    <input type="text" class="quantity-input" value="1" />
+                    <button class="quantity-button btn">+</button>
+                  </div>
+                  <button class="add-to-carts rounded-pill">ADD
+                    TO CART</button>
                 </div>
-                <button class="add-to-cart rounded-pill">ADD
-                  TO CART</button>
+
                 <div class="free-delivery">
                   <svg
                     className=""
@@ -108,7 +111,7 @@ function ProductCard({ product }) {
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 64 64"
-                    style={{width:"10%"}}
+                    style={{ width: "8%" }}
                   >
                     <defs>
                       <style>{".a{fill:none;stroke:#000;stroke-width:2px}"}</style>
@@ -122,13 +125,14 @@ function ProductCard({ product }) {
                       d="M32 54.52v-19.9l22-12.57M32 34.62L10 22.05M41.7 15.02L21 28.33v8.38"
                     />
                   </svg>
-                  <p>Your order is free delivery!</p>
+                  <p className='mt-3 ms-2'>Your order is free delivery!</p>
                 </div>
                 <div class="product-details">
                   <p>SKU:</p>
                   <p>TYPE:</p>
                 </div>
-                <a href="#" class="view-details">View details</a>
+                <Link to="" className='view-details text-dark'>View details</Link>
+
               </div>
             </div>
           </div>

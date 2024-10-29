@@ -9,7 +9,7 @@ const Products = [
 
     {
         id: "01",
-        title: "Sleek Trendsetter Gold Necklace",
+        title: "Peach Pink Kanjivaram Silk Blend Pure Zari Weaving Saree",
         price: 1699,
         category: "SARI",
         size: "FREE",
@@ -22,7 +22,7 @@ const Products = [
     },
     {
         id: "02",
-        title: "Sleek Trendsetter Gold Necklace",
+        title: "Peach Pink Kanjivaram Silk Blend Pure Zari Weaving Saree",
         price: 1699,
         category: "SARI",
         size: "FREE",
@@ -35,7 +35,7 @@ const Products = [
     },
     {
         id: "03",
-        title: "Sleek Trendsetter Gold Necklace",
+        title: "Peach Pink Kanjivaram Silk Blend Pure Zari Weaving Saree",
         price: 1699,
         category: "SARI",
         size: "FREE",
@@ -48,7 +48,7 @@ const Products = [
     },
     {
         id: "04",
-        title: "Sleek Trendsetter Gold Necklace",
+        title: "Peach Pink Kanjivaram Silk Blend Pure Zari Weaving Saree",
         price: 1699,
         category: "SARI",
         size: "FREE",
@@ -61,7 +61,7 @@ const Products = [
     },
     {
         id: "05",
-        title: "Sleek Trendsetter Gold Necklace",
+        title: "Peach Pink Kanjivaram Silk Blend Pure Zari Weaving Saree",
         price: 1699,
         category: "SARI",
         size: "FREE",
@@ -74,7 +74,7 @@ const Products = [
     },
     {
         id: "06",
-        title: "Sleek Trendsetter Gold Necklace",
+        title: "Peach Pink Kanjivaram Silk Blend Pure Zari Weaving Saree",
         price: 1699,
         category: "SARI",
         size: "FREE",
