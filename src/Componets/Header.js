@@ -51,7 +51,8 @@ const Header = () => {
                                     <ul className='offcanvas-menu mt-4'>
                                         <li><Link to="/NewArrivel">NEW ARRIVALS</Link></li>
                                         <li><Link>BEST SELLER</Link></li>
-                                        <li><Link data-bs-toggle="collapse" to="#collapseExample " role="button" aria-expanded="false" aria-controls="collapseExample"> PRINTED FABRIC <i className="fa-solid fa-caret-down float-end"></i></Link>
+                                        <li><Link to="/printedfabric"> PRINTED FABRIC </Link>
+                                        <i className="fa-solid fa-caret-down float-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i>
                                             <div className="collapse" id="collapseExample">
                                                 <div className='text-dark' >
                                                     <ul className='offcanvas-sub-menu'>
