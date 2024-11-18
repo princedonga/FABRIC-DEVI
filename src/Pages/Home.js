@@ -72,7 +72,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className='container-fluid px-5'>
+            <section className='container-fluid px-lg-5 px-3'>
                 <div className='row'>
                     <div className='col-lg-12 py-4'>
                         <div className='text-center '>
